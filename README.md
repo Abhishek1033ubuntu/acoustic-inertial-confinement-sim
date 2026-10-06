@@ -13,10 +13,6 @@ This repository documents a foundational 0D mathematical proof-of-concept for an
 
 Operating as the fluid-dynamic equivalent of an internal combustion engine's "compression stroke," the architecture uses an acoustic impedance-matched standoff medium to transfer nanosecond-scale kinetic energy. This avoids the severe thermodynamic energy losses typical of optical and magnetic confinement systems.# Acoustic Inertial Confinement: The "Compression Stroke" Architecture
 
-**Date of Record:** October 6, 2026  
-**Lead Architect & Researcher:** Abhishek Singh  
-**Repository:** `acoustic-inertial-confinement-sim`
-
 ## The Core Axiom: The Acoustic Compression Stroke
 Traditional acoustic models suffer from continuous resonance, leading to catastrophic thermal failure of the containment apparatus. This architecture discards continuous resonance in favor of a **Single-Shot Spherical Implosion**.
 
