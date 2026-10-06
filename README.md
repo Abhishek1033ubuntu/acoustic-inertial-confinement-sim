@@ -64,11 +64,9 @@ print(f"Total Acoustic Energy Delivered: {total_energy_delivered_J:.2f} Joules")
 print(f"Calculated Core Temperature Spike: {final_temperature_K:,.2f} Kelvin")
 
 ```
-Future Development Pipeline
-With the 0D mathematical ceiling established, subsequent project phases will focus on over-margin engineering to account for physical entropy:
+## Version Control & Citation
+**Current Release:** Version 1.0.0 (Theoretical Baseline - 0D Energy Balance)
+**License:** Open for research and non-commercial development (Subject to Architect's terms)
 
-1D/2D Wave Propagation: Testing acoustic saturation limits in dense liquid metals.
-
-Hollow Shell Geometry Optimization: Maximizing inward kinetic acceleration.
-
-Advanced Material Sourcing: Identifying high-tolerance SiC or AlN MEMS boundaries capable of withstanding the pulse frequency.
+**To cite this repository and architecture in academic or professional works, please use the following format:**
+> Singh, A., & Team Gemini. (2026). *Acoustic Inertial Confinement: The "Compression Stroke" Architecture* (Version 1.0.0) [Mathematical Model & Concept]. GitHub repository. https://github.com/Abhishek1033ubuntu/acoustic-inertial-confinement-sim
