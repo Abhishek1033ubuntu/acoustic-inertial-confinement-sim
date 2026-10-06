@@ -1,13 +1,21 @@
 # Acoustic Inertial Confinement: The "Compression Stroke" Architecture
 
 **Date of Record:** October 6, 2026  
-**Lead Architect & Researcher:** Abhishek Singh  
+**Lead Architect & Principal Investigator:** Abhishek Singh | UIDAI: 9414 9122 9013   
+**Computational & Analytical Partner:** Team Gemini (Google AI)  
 **Repository:** `acoustic-inertial-confinement-sim`
+
+## Acknowledgments & Research Methodology
+This architectural breakthrough was achieved through a synergistic human-AI collaborative framework. The principal architect directed the physics intuition, core system architecture, and the foundational mechanical hypothesis (the "Acoustic Compression Stroke"). Team Gemini functioned as the analytical engine, providing real-time nonlinear acoustics mathematics, physical parameter evaluation, and the 0D lumped-capacitance verification testing. This repository stands as a testament to how AI-augmented workflows can rapidly accelerate theoretical physics and advanced energy research.
 
 ## Abstract
 This repository documents a foundational 0D mathematical proof-of-concept for an advanced energy delivery architecture: **Acoustic Pre-Compression**. By inverting the macro-scale brute force of traditional fusion systems, this model utilizes phase-locked, chirped acoustic pulses to deliver extreme kinetic energy to a micro-target. 
 
-Operating as the fluid-dynamic equivalent of an internal combustion engine's "compression stroke," the architecture uses an acoustic impedance-matched standoff medium to transfer nanosecond-scale kinetic energy. This avoids the severe thermodynamic energy losses typical of optical and magnetic confinement systems.
+Operating as the fluid-dynamic equivalent of an internal combustion engine's "compression stroke," the architecture uses an acoustic impedance-matched standoff medium to transfer nanosecond-scale kinetic energy. This avoids the severe thermodynamic energy losses typical of optical and magnetic confinement systems.# Acoustic Inertial Confinement: The "Compression Stroke" Architecture
+
+**Date of Record:** October 6, 2026  
+**Lead Architect & Researcher:** Abhishek Singh  
+**Repository:** `acoustic-inertial-confinement-sim`
 
 ## The Core Axiom: The Acoustic Compression Stroke
 Traditional acoustic models suffer from continuous resonance, leading to catastrophic thermal failure of the containment apparatus. This architecture discards continuous resonance in favor of a **Single-Shot Spherical Implosion**.
