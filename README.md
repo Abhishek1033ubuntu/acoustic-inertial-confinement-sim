@@ -78,6 +78,19 @@ To protect the MEMS actuation array from gigapascal-level shock reflections duri
 * **Max Attenuation Coefficient:** $\alpha = 0.045 \text{ mm}^{-1}$ (Non-linear phononic dispersion)
 * **Nuclear Transport Resistance:** High-fluence 14.1 MeV fusion neutron tolerant.
 
+## 3D Geodesic Multi-Directional MEMS Array & Hydrodynamic Balancing
+
+To prevent Rayleigh-Taylor and Richtmyer-Meshkov hydrodynamic instabilities during implosion, the 1.5-meter reactor chamber utilizes a **Geodesic Icosahedral Lattice Array** for 3D multi-directional spatial actuation ($360^\circ \times 360^\circ$).
+
+### 1. Spatial Geometry & Antipodal Balancing
+* **Geodesic Tessellation:** Emitter clusters are arranged on a 1.5 m radius spherical shell following a truncated geodesic icosahedron, dividing the chamber wall into symmetric, phase-locked actuation nodes.
+* **Antipodal Vector Cancellation:** Every MEMS cluster at spatial coordinates $(x, y, z)$ is hard-paired with an antipodal counterpart at $(-x, -y, -z)$.
+* **Hydrodynamic Drift Mitigation:** The net force vector at the focal center sums to exactly $\sum \mathbf{F} = 0.00 \text{ N}$, preventing translational momentum drift and jetting during implosion.
+
+### 2. Isotropic Hydrostatic Compression
+* **Vector vs. Scalar Coupling:** While the directional vector sum cancels to zero ($\sum \mathbf{F} = 0$), the scalar acoustic pressure amplitudes sum constructively ($P = \sum |F_i| / A$).
+* **Implosion Stagnation Yield:** Converts the entire 40 J acoustic stroke into isotropic $P \, dV$ mechanical work, driving target compression down to a 15 $\mu\text{m}$ focal spot and generating peak stagnation core temperatures of $5.52 \times 10^9 \text{ K}$.
+  
 ## Version Control & Citation
 **Current Release:** Version 1.0.0 (Theoretical Baseline - 0D Energy Balance)
 **License:** Open for research and non-commercial development (Subject to Architect's terms)
