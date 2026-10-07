@@ -1,11 +1,24 @@
 cff-version: 1.2.0
-message: "If you use this research or cryogenic thermal solver in your work, please cite it as below."
+title: "Acoustic Inertial Confinement: The Compression Stroke Architecture"
+message: "If you use or reference this architecture or multi-physics model, please cite it as below."
+type: software
 authors:
-  - family-names: "Singh"
-    given-names: "Abhishek"
+  - family-names: Singh
+    given-names: Abhishek
     orcid: "https://orcid.org/0009-0004-6913-096X"
-title: "acoustic-inertial-confinement-sim"
-version: "1.0.0"
-date-released: 2026-10-016
-url: "https://github.com/Abhishek1033ubuntu/acoustic-inertial-confinement-sim"
+    affiliation: Lead Architect & Principal Investigator
+  - name: "Team Gemini (Google AI)"
+    website: "https://gemini.google.com"
 repository-code: "https://github.com/Abhishek1033ubuntu/acoustic-inertial-confinement-sim"
+abstract: "A 3D geodesic MEMS phase-steered Acoustic Inertial Confinement Fusion (AICF) reactor model featuring Direct Energy Conversion (DEC) plasma braking, non-magnetic ODS metamaterial shielding, and closed-loop multi-physics validation."
+keywords:
+  - acoustic inertial confinement
+  - fusion energy
+  - direct energy conversion
+  - magnetohydrodynamics
+  - metamaterials
+  - high-entropy superalloys
+  - computational physics
+license: MIT
+version: 1.1.0
+date-released: 2026-10-07
