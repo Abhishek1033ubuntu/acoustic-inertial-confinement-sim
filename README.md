@@ -254,11 +254,11 @@ acoustic-inertial-confinement-sim/
 
 ## ⚡ Support & Live Development
 
-We are actively developing and iterating on the **Model 1 Acoustic Fusion Reactor** in real-time. If you find our open-source research, FDTD wave mechanics, or materials simulation work valuable and would like to support ongoing compute and development costs, consider contributing:
+We are actively developing and iterating on the **Model 1 Acoustic Fusion Reactor** in real-time. If you find our research, FDTD wave mechanics, or materials simulation work valuable and would like to support ongoing compute and development costs, consider contributing:
 
 | Platform | Link |
-| --- | --- |
-| **PayPal** | [](https://www.paypal.me/Abhishek1033ubuntu) |
-| **GitHub Sponsors** | [](https://www.google.com/search?q=https%3A%2F%2Fgithub.com%2Fsponsors%2FAbhishek1033ubuntu) |
+| :--- | :--- |
+| **PayPal** | [![PayPal](https://img.shields.io/badge/Donate-PayPal-blue.svg?logo=paypal)](https://www.paypal.me/Abhishek1033ubuntu) |
+| **GitHub Sponsors** | [![GitHub Sponsors](https://img.shields.io/badge/Sponsor-GitHub-ea4aaa.svg?logo=github)](https://github.com/sponsors/Abhishek1033ubuntu) |
 
 *Thank you to all our supporters helping us advance open, accessible fusion research!*
