@@ -124,6 +124,22 @@ To maximize CapEx efficiency and eliminate parasitic driver draw from the grid, 
 * **Thermal Loop (80% Yield):** 14.1 MeV fusion neutrons heat the liquid lithium blanket, driving a centralized supercritical $\text{CO}_2$ ($\text{sCO}_2$) turbine manifold for continuous 3-phase AC baseload grid power.
 * **DEC DC Loop (20% Yield):** Captures $1.22\text{ kJ}$ of direct DC electrical energy per pulse via inductive pickup coils and an intermediate pulsed capacitor bank.
 * **Driver Autonomy:** $61.54\text{ J}$ of the DEC output is continuously recycled to re-arm the 3D MEMS actuation arrays, making the driver 100% self-powered.  
+
+## Non-Magnetic Chamber Mechanics & Material Bounds
+
+To ensure structural survivability under $10^9$ cycles while preventing parasitic eddy current decay during DEC plasma expansion, the $r = 0.85\text{ m}$ vessel utilizes an **Austenitic ODS High-Entropy Superalloy**.
+
+### 1. Structural & Material Specifications
+* **Matrix Composition:** Non-magnetic Austenitic High-Entropy Matrix ($\text{Fe-Cr-Mn-Ni}$ system) reinforced with Yttria ($\text{Y}_2\text{O}_3$) nano-particles.
+* **Magnetic Permeability ($\mu_r$):** $1.002$ (Electromagnetically transparent; $97.6\%$ DEC flux coupling efficiency).
+* **Fatigue Limit ($10^9$ Cycles):** $450.0\text{ MPa}$ endurance limit ($225.0\text{ MPa}$ design limit at $2.0\times$ safety factor).
+* **Buffer-Attenuated Peak Load:** $120.0\text{ MPa}$ transient wall load.
+
+### 2. Physical Chamber Dimensions
+* **Inner Chamber Radius ($r_{\text{in}}$):** $0.850\text{ m}$
+* **Minimum Wall Thickness ($t$):** $51.42\text{ mm}$ ($5.14\text{ cm}$)
+* **Outer Vessel Radius ($r_{\text{out}}$):** $0.901\text{ m}$ ($1.802\text{ m}$ total outer vessel diameter)
+* **Port Concentration Factor ($K_t$):** $2.2$ (Accommodates DEC coils, liquid Li manifolds, and target injection guns).
   
 ## Version Control & Citation
 **Current Release:** Version 1.0.0 (Theoretical Baseline - 0D Energy Balance)
