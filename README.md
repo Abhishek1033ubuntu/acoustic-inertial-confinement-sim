@@ -90,6 +90,20 @@ To prevent Rayleigh-Taylor and Richtmyer-Meshkov hydrodynamic instabilities duri
 ### 2. Isotropic Hydrostatic Compression
 * **Vector vs. Scalar Coupling:** While the directional vector sum cancels to zero ($\sum \mathbf{F} = 0$), the scalar acoustic pressure amplitudes sum constructively ($P = \sum |F_i| / A$).
 * **Implosion Stagnation Yield:** Converts the entire 40 J acoustic stroke into isotropic $P \, dV$ mechanical work, driving target compression down to a 15 $\mu\text{m}$ focal spot and generating peak stagnation core temperatures of $5.52 \times 10^9 \text{ K}$.
+
+## Industrial Deployment Framework: Dual-Scale Tiers
+
+### 1. Model 1-S (Modular Micro-Grid / 10 MW Class)
+* **Application:** Decentralized industrial heat, remote micro-grids, marine propulsion.
+* **Pulse Repetition:** 5.0 Hz | **Thermal Yield:** 10 MW_th | **Net Electric Output:** 3.9 MW_e
+* **Footprint:** Single 1.5 m chamber with integrated sCO2 power loop.
+
+### 2. Model 1-L (Utility Grid / GW-TW Class)
+* **Application:** Base-load national grid generation & regional power stations.
+* **Pulse Repetition:** 50.0 Hz (Multi-Chamber Phase-Interleaved Array).
+* **Thermal Yield:** 3.0 GW_th to 1.0 TW_th | **Net Electric Output:** 1.18 GW_e per cell manifold.
+* **Energy Buffering:** Integrated Pulsed Battery Bank & Flywheel Array for grid stabilization.
+* **Safety & IAEA Compliance:** Passive shutdown, TBR = 1.15 closed-loop tritium recovery, non-magnetic architecture.
   
 ## Version Control & Citation
 **Current Release:** Version 1.0.0 (Theoretical Baseline - 0D Energy Balance)
