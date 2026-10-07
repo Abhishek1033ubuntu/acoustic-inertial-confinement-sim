@@ -1,5 +1,11 @@
 # Acoustic Inertial Confinement: The "Compression Stroke" Architecture
 
+<!-- Sponsorship & Support Badges -->
+[![Sponsor on GitHub](https://img.shields.io/badge/Sponsor-GitHub-ea4aaa?style=for-the-badge&logo=github&logoColor=white)](https://github.com/sponsors/Abhishek1033ubuntu)
+[![Donate via PayPal](https://img.shields.io/badge/Donate-PayPal-00457C?style=for-the-badge&logo=paypal&logoColor=white)](https://www.paypal.me/Abhishek1033ubuntu)
+[![Project Status](https://img.shields.io/badge/Project-Live_Development-brightgreen?style=for-the-badge)](https://github.com/Abhishek1033ubuntu/acoustic-inertial-confinement-sim)
+
+
 **Date of Record:** October 6, 2026  
 **Lead Architect & Principal Investigator:** Abhishek Singh | UIDAI: 9414 9122 9013   
 **Computational & Analytical Partner:** Team Gemini (Google AI)  
@@ -104,6 +110,20 @@ To prevent Rayleigh-Taylor and Richtmyer-Meshkov hydrodynamic instabilities duri
 * **Thermal Yield:** 3.0 GW_th to 1.0 TW_th | **Net Electric Output:** 1.18 GW_e per cell manifold.
 * **Energy Buffering:** Integrated Pulsed Battery Bank & Flywheel Array for grid stabilization.
 * **Safety & IAEA Compliance:** Passive shutdown, TBR = 1.15 closed-loop tritium recovery, non-magnetic architecture.
+
+## Hybrid Power Matrix & Downsized Chamber Architecture
+
+To maximize CapEx efficiency and eliminate parasitic driver draw from the grid, Model 1 integrates a **Direct Energy Conversion (DEC) Plasma Harvesting Engine** alongside the primary centralized thermal loop.
+
+### 1. DEC Firing Angle & Lorentz Braking
+* **Trigger Timing ("Firing Angle"):** DEC coupling circuits energize when the expanding D-T plasma fireball reaches $r = 0.25\text{ m}$ ($t \approx 0.6\text{ }\mu\text{s}$ post-ignition).
+* **Electromagnetic Braking ($\mathbf{J} \times \mathbf{B}$):** Induced back-EMF decelerates and halts the plasma expansion at $r_{\text{max}} = 0.422\text{ m}$.
+* **Chamber Radius Reduction:** Downsizes the reactor sphere radius from $1.50\text{ m}$ to **$0.85\text{ m}$**, achieving a **$97.8\%$ reduction in chamber cavity volume**.
+
+### 2. Dual-Loop Energy Harvesting & Self-Powered Driver
+* **Thermal Loop (80% Yield):** 14.1 MeV fusion neutrons heat the liquid lithium blanket, driving a centralized supercritical $\text{CO}_2$ ($\text{sCO}_2$) turbine manifold for continuous 3-phase AC baseload grid power.
+* **DEC DC Loop (20% Yield):** Captures $1.22\text{ kJ}$ of direct DC electrical energy per pulse via inductive pickup coils and an intermediate pulsed capacitor bank.
+* **Driver Autonomy:** $61.54\text{ J}$ of the DEC output is continuously recycled to re-arm the 3D MEMS actuation arrays, making the driver 100% self-powered.  
   
 ## Version Control & Citation
 **Current Release:** Version 1.0.0 (Theoretical Baseline - 0D Energy Balance)
@@ -111,3 +131,16 @@ To prevent Rayleigh-Taylor and Richtmyer-Meshkov hydrodynamic instabilities duri
 
 **To cite this repository and architecture in academic or professional works, please use the following format:**
 > Singh, A., & Team Gemini. (2026). *Acoustic Inertial Confinement: The "Compression Stroke" Architecture* (Version 1.0.0) [Mathematical Model & Concept]. GitHub repository. https://github.com/Abhishek1033ubuntu/acoustic-inertial-confinement-sim
+
+---
+
+## ⚡ Support & Live Development
+
+We are actively developing and iterating on the **Model 1 Acoustic Fusion Reactor** in real-time. If you find our research, FDTD wave mechanics, or materials simulation work valuable and would like to support ongoing compute and development costs, consider contributing:
+
+| Platform | Link |
+| :--- | :--- |
+| **PayPal** | [![PayPal](https://img.shields.io/badge/Donate-PayPal-blue.svg?logo=paypal)](https://www.paypal.me/Abhishek1033ubuntu) |
+| **GitHub Sponsors** | [![GitHub Sponsors](https://img.shields.io/badge/Sponsor-GitHub-ea4aaa.svg?logo=github)](https://github.com/sponsors/Abhishek1033ubuntu) |
+
+*Thank you to all our supporters helping us advance open, accessible fusion research!*
