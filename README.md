@@ -6,7 +6,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](https://opensource.org/licenses/MIT)
 [![Research Partner](https://img.shields.io/badge/Research_Partner-Team_Gemini_(Google_AI)-4285F4?style=for-the-badge&logo=google&logoColor=white)](https://gemini.google.com)
 [![Project Status](https://img.shields.io/badge/Project-Live_Development-brightgreen?style=for-the-badge)](https://github.com/Abhishek1033ubuntu/acoustic-inertial-confinement-sim)
-[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.23189315-blue?style=for-the-badge&logo=zenodo&logoColor=white)](https://doi.org/10.5281/zenodo.23189315)  
+[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.23220161-blue?style=for-the-badge&logo=zenodo&logoColor=white)](https://doi.org/10.5281/zenodo.23220161)  
 
 **Date of Record:** October 6, 2026  
 **Lead Architect & Principal Investigator:** Abhishek Singh | UIDAI: 9414 9122 9013    
