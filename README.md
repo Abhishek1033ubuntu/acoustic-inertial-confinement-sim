@@ -177,7 +177,7 @@ To ensure structural survivability under $10^9$ cycles while preventing parasiti
 
 ### 1. Advanced DEC Coil Material: Covetic Cu-Graphene Composite
 
-Re-evaluated and screened via `subatomic-materials-suite` for extreme neutronic, electromagnetic, and thermal environments:
+Re-evaluated and screened via [`subatomic-materials-suite`](https://github.com/Abhishek1033ubuntu/subatomic-materials-suite) for extreme neutronic, electromagnetic, and thermal environments:
 
 * **Material Matrix:** Graphene-Reinforced Covetic Copper Composite ($\text{Cu-Graphene}$ System).
 * **Electrical Conductivity:** $122\%\text{ IACS}$ (International Annealed Copper Standard).
