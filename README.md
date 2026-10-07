@@ -247,7 +247,7 @@ acoustic-inertial-confinement-sim/
 
 ## Version Control & Citation
 
-**Current Release:** Version 1.0.0 (Closed-Loop Multi-Physics Baseline)
+**Current Release:** Version 1.1.0 (Closed-Loop Multi-Physics Baseline)
 
 **License:** [MIT License](https://opensource.org/licenses/MIT)
 
