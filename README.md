@@ -253,7 +253,7 @@ acoustic-inertial-confinement-sim/
 
 **To cite this repository and architecture in academic or professional works, please use the following format:**
 
-> Singh, A., & Team Gemini. (2026). *Acoustic Inertial Confinement: The "Compression Stroke" Architecture* (Version 1.0.0) [Multi-Physics Model & System Blueprint]. GitHub repository. https://github.com/Abhishek1033ubuntu/acoustic-inertial-confinement-sim
+> Singh, A., & Team Gemini. (2026). *Acoustic Inertial Confinement: The "Compression Stroke" Architecture* (Version 1.1.0) [Multi-Physics Model & System Blueprint]. GitHub repository. https://github.com/Abhishek1033ubuntu/acoustic-inertial-confinement-sim
 
 ---
 
