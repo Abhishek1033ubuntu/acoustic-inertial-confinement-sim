@@ -1,69 +1,82 @@
 """
-Model 1: Parametric 3D CAD Geometry Generator
-Generates CAD STEP files for the 0.85m vessel assembly and metamaterial buffer layer.
-Requires: cadquery (pip install cadquery)
+Model 1: Production-Grade Parametric 3D CAD STEP Generator
+Generates exact 3D STEP geometry files for vessel shell and metamaterial buffer.
+Compatible with standard Python scripts, Jupyter Notebooks, and Google Colab.
 """
 
-import cadquery as cq
+import os
+import sys
 
-# ==========================================
-# 1. PARAMETRIC VESSEL GEOMETRY
-# ==========================================
+# 1. DEPENDENCY CHECK
+try:
+    import cadquery as cq
+except ImportError:
+    print("ERROR: CadQuery is not installed. Run 'pip install cadquery' to generate STEP files.")
+    sys.exit(1)
 
-r_in = 850.0          # Inner radius (mm)
-wall_thickness = 51.42 # Outer structural wall thickness (mm)
-buffer_thickness = 44.44 # Inner metamaterial buffer thickness (mm)
+# 2. JUPYTER-SAFE DIRECTORY DETECTION
+try:
+    # Works when executed as a standard .py script
+    script_dir = os.path.dirname(os.path.abspath(__file__))
+    root_dir = os.path.abspath(os.path.join(script_dir, ".."))
+except NameError:
+    # Fallback for Jupyter Notebook / Google Colab interactive kernels
+    root_dir = os.path.abspath(os.getcwd())
 
-r_buffer_in = r_in - buffer_thickness
-r_out = r_in + wall_thickness
+cad_dir = os.path.join(root_dir, "cad")
+os.makedirs(cad_dir, exist_ok=True)
 
-# Port Dimensions (mm)
+# 3. VESSEL DIMENSIONAL PARAMETERS (mm)
+r_in = 850.0
+wall_t = 51.42
+buffer_t = 44.44
+r_out = r_in + wall_t
+r_buf_in = r_in - buffer_t
+
 bore_fluid = 150.0 / 2.0
 bore_dec = 220.0 / 2.0
 bore_inject = 40.0 / 2.0
 
-# ==========================================
-# 2. CAD QUERY GEOMETRY MODELING
-# ==========================================
+print(f"[1/3] Target Output Directory Confirmed: {cad_dir}")
 
-print("Generating Model 1 Structural Shell...")
-# Outer Structural Wall Sphere
-outer_sphere = cq.Workplane("XY").sphere(r_out)
-inner_cavity = cq.Workplane("XY").sphere(r_in)
-vessel_shell = outer_sphere.cut(inner_cavity)
-
-# Fluid Ports (Top/Bottom)
-top_port = cq.Workplane("XY").circle(bore_fluid).extrude(r_out * 2.0).translate((0, 0, -r_out))
-vessel_shell = vessel_shell.cut(top_port)
-
-# DEC Quadrant Ports (Equatorial, 4-fold symmetry)
-for angle in [0, 90, 180, 270]:
-    dec_port = (cq.Workplane("YZ")
-                .circle(bore_dec)
-                .extrude(r_out * 2.0)
-                .rotate((0, 0, 0), (0, 0, 1), angle))
-    vessel_shell = vessel_shell.cut(dec_port)
-
-# Target Injection Port
-inject_port = (cq.Workplane("YZ")
-               .circle(bore_inject)
-               .extrude(r_out * 2.0)
-               .rotate((0, 0, 0), (0, 0, 1), 45))
-vessel_shell = vessel_shell.cut(inject_port)
-
-# Metamaterial Buffer Layer
-print("Generating Metamaterial Buffer Assembly...")
-buffer_outer = cq.Workplane("XY").sphere(r_in)
-buffer_inner = cq.Workplane("XY").sphere(r_buffer_in)
-buffer_layer = buffer_outer.cut(buffer_inner)
-
-# ==========================================
-# 3. EXPORT STEP FILES
-# ==========================================
-
+# 4. CAD GEOMETRY GENERATION
 try:
-    cq.exporters.export(vessel_shell, "../cad/vessel_assembly_0.85m.step")
-    cq.exporters.export(buffer_layer, "../cad/mems_geodesic_array.step")
-    print("SUCCESS: STEP files generated in 'cad/' directory.")
+    # A. Structural Outer Shell
+    print("[2/3] Modeling 0.85m Structural Shell Assembly...")
+    outer_sp = cq.Workplane("XY").sphere(r_out)
+    inner_sp = cq.Workplane("XY").sphere(r_in)
+    vessel = outer_sp.cut(inner_sp)
+
+    # Cut Fluid Ports (Top/Bottom)
+    fluid_tool = cq.Workplane("XY").circle(bore_fluid).extrude(r_out * 2.2).translate((0, 0, -r_out * 1.1))
+    vessel = vessel.cut(fluid_tool)
+
+    # Cut DEC Ports (Equatorial Quadrants)
+    for deg in [0, 90, 180, 270]:
+        dec_tool = (cq.Workplane("YZ")
+                    .circle(bore_dec)
+                    .extrude(r_out * 2.2)
+                    .translate((-r_out * 1.1, 0, 0))
+                    .rotate((0, 0, 0), (0, 0, 1), deg))
+        vessel = vessel.cut(dec_tool)
+
+    vessel_path = os.path.join(cad_dir, "vessel_assembly_0.85m.step")
+    cq.exporters.export(vessel, vessel_path)
+
+    # B. Metamaterial Buffer Layer
+    print("[3/3] Modeling Metamaterial Buffer Layer...")
+    buf_outer = cq.Workplane("XY").sphere(r_in)
+    buf_inner = cq.Workplane("XY").sphere(r_buf_in)
+    buffer_layer = buf_outer.cut(buf_inner)
+
+    buffer_path = os.path.join(cad_dir, "mems_geodesic_array.step")
+    cq.exporters.export(buffer_layer, buffer_path)
+
+    # 5. EXPORT VERIFICATION
+    if os.path.exists(vessel_path) and os.path.exists(buffer_path):
+        print(f"\nSUCCESS: Verified CAD STEP files created successfully in:\n  -> {vessel_path}\n  -> {buffer_path}")
+    else:
+        print("\nERROR: File export completed but files were not detected on disk.")
+
 except Exception as e:
-    print(f"Export Notice: Install CadQuery (`pip install cadquery`) to execute STEP export. ({e})")
+    print(f"\nFATAL: CAD Generation Failed: {e}")
