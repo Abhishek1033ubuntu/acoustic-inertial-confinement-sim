@@ -226,15 +226,23 @@ The Model 1 Acoustic Inertial Confinement Fusion (AICF) reactor architecture is 
 ```text
 acoustic-inertial-confinement-sim/
 ├── LICENSE                        # MIT License
-├── README.md                      # Primary Technical Specification & Project Status
-├── docs/                          # Comprehensive Technical & Regulatory Docs
-│   ├── IAEA_SAFEGUARDS.md         # IAEA Compliance & Safeguards
-│   └── CAD_SPECIFICATIONS.md      # Geometry & Vessel Specifications
-├── cad/                           # 3D STEP Geometry & Enclosures
-├── electronics/                   # Circuit Topologies & Optical Tree Schematics
+├── README.md                      # Primary Technical Specification & Project Status (v1.1.0)
+├── CITATION.cff                   # Citation Metadata (v1.1.0)
+├── docs/                          # Technical & Regulatory Docs
+│   ├── IAEA_SAFEGUARDS.md         # IAEA Compliance, Non-Proliferation & Safety
+│   └── CAD_SPECIFICATIONS.md      # Geometry, Flanges, Port Topologies & Wall Specs
+├── cad/                           # 3D STEP Geometry & Enclosures (Placeholders ready)
+│   ├── vessel_assembly_0.85m.step
+│   └── mems_geodesic_array.step
+├── electronics/                   # Circuit Topologies & Schematics
+│   ├── MEMS_DRIVER_TOPOLOGY.md    # 800V Optoelectronic Node Driver Specs
+│   └── DEC_PULSED_CAPACITOR_BANK.md # 3.5 GW Solid-State Marx Bank Specs
 ├── simulations/                   # Python FDTD & Multi-Physics Solvers
+│   ├── fluid_cavitation_reset.py
+│   ├── dec_plasma_braking.py
+│   └── closed_loop_telemetry.py
 └── test_protocols/                # Validation Protocols & Benchmarking
-
+    └── TEST_BENCH_SPECIFICATIONS.md # Hardware Benchmarking Protocols 1 & 2
 ```
 ---
 
