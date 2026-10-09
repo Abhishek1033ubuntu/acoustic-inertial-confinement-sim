@@ -17,6 +17,7 @@ Each of the 320 geodesic MEMS actuation nodes operates as an autonomous, optical
           ▼
 [ Charge-Dump Ground ]
 
+```
 
 ---
 
