@@ -8,13 +8,13 @@
 ## 1. High-Level Circuit Architecture
 
 Each of the 320 geodesic MEMS actuation nodes operates as an autonomous, optically triggered driver circuit. Energy is harvested directly from the $800\text{ V DC}$ local distribution rail supplied by the DEC energy recovery loop.
-
+```
 [ Local 800V DC Bus ] ──────► [ Local 10µF Capacitor ]
-│
-▼
+                                                    │
+                                                    ▼
 [ Fiber Optic Input ] ──► [ Photodiode / GaN Gate ] ──► [ SiC MEMS Actuator ]
-│
-▼
+          │
+          ▼
 [ Charge-Dump Ground ]
 
 
