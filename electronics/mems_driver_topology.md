@@ -1,4 +1,3 @@
-Markdown
 # MEMS Actuator Node Driver & Optoelectronic Gate Topology
 
 **Document ID:** ELEC-MEMS-2026-MODEL1  
